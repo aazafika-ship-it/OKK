@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>TK Cendekia - Data Guru</title>
+    <style>
+        /* Copas Style Sidebar dari index.html */
+        :root { --primary: #0f172a; --accent: #3b82f6; --sidebar-w: 260px; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; background: #f8fafc; }
+        .sidebar { width: var(--sidebar-w); height: 100vh; background: var(--primary); color: white; position: fixed; padding: 40px 0; }
+        .sidebar-menu { list-style: none; padding: 0; margin-top: 50px; }
+        .sidebar-menu li a { display: block; padding: 16px 30px; color: #94a3b8; text-decoration: none; }
+        .sidebar-menu li a.active { color: white; background: rgba(59, 130, 246, 0.1); border-left: 5px solid var(--accent); }
+        .main-content { margin-left: var(--sidebar-w); width: calc(100% - var(--sidebar-w)); padding: 80px 6%; }
+        .grid-guru { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .card-guru { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; }
+        .card-guru img { width: 100%; height: 250px; object-fit: cover; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div style="padding: 0 30px;"><h2>CENDEKIA</h2></div>
+        <ul class="sidebar-menu">
+            <li><a href="index.html">🏠 Beranda</a></li>
+            <li><a href="program.html">🎨 Program</a></li>
+            <li><a href="guru.html" class="active">👩‍🏫 Data Guru</a></li>
+            <li><a href="lokasi.html">📍 Lokasi</a></li>
+            <li><a href="daftar.html">📝 Pendaftaran</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Database Tenaga Pengajar</h1>
+        <div class="grid-guru">
+            <div class="card-guru">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400">
+                <div style="padding:15px;"><h3>Bunda Sarah, S.Pd</h3><p>Kepala Sekolah</p></div>
+            </div>
+            <div class="card-guru">
+                <img src="https://images.unsplash.com/photo-1580894732234-83e9e3ec5d67?w=400">
+                <div style="padding:15px;"><h3>Bunda Rani</h3><p>Guru Kelas A</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

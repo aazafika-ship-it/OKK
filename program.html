@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>TK Cendekia - Program</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        :root { --primary: #0f172a; --accent: #3b82f6; --sidebar-w: 260px; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; background: #f8fafc; }
+        .sidebar { width: var(--sidebar-w); height: 100vh; background: var(--primary); color: white; position: fixed; padding: 40px 0; }
+        .sidebar-menu { list-style: none; padding: 0; margin-top: 50px; }
+        .sidebar-menu li a { display: block; padding: 16px 30px; color: #94a3b8; text-decoration: none; font-weight: 600; }
+        .sidebar-menu li a.active { color: white; background: rgba(59, 130, 246, 0.1); border-left: 5px solid var(--accent); }
+        .main-content { margin-left: var(--sidebar-w); width: calc(100% - var(--sidebar-w)); padding: 80px 6%; }
+        .card-prog { background: white; padding: 30px; border-radius: 20px; border-left: 10px solid var(--accent); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div style="padding: 0 30px;"><h2>CENDEKIA</h2></div>
+        <ul class="sidebar-menu">
+            <li><a href="index.html">🏠 Beranda</a></li>
+            <li><a href="program.html" class="active">🎨 Program</a></li>
+            <li><a href="guru.html">👩‍🏫 Data Guru</a></li>
+            <li><a href="lokasi.html">📍 Lokasi</a></li>
+            <li><a href="daftar.html">📝 Pendaftaran</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1 data-aos="fade-right">Program Kami</h1>
+        <div class="card-prog" data-aos="zoom-in">
+            <h3>1 Hari Bahasa Jawa, Calistung & Aswaja</h3>
+            <p>Program unggulan harian untuk melestarikan budaya dan nilai keagamaan.</p>
+        </div>
+        <h2 style="margin-top:50px;">Galeri Kegiatan</h2>
+        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:15px;">
+            <div style="background:#ddd; height:200px; border-radius:10px; display:flex; align-items:center; justify-content:center;">Intrakurikuler</div>
+            <div style="background:#ddd; height:200px; border-radius:10px; display:flex; align-items:center; justify-content:center;">Kokokuler</div>
+            <div style="background:#ddd; height:200px; border-radius:10px; display:flex; align-items:center; justify-content:center;">Ekstrakurikuler</div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
